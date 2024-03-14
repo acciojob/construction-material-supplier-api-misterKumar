@@ -9,6 +9,8 @@ public class ConstructionMaterial {
 
     public ConstructionMaterial(String name, double pricePerUnit) {
     	// your code goes here
+        this.name=name;
+        this.pricePerUnit=pricePerUnit;
     }
 
     public int getId() {
@@ -18,6 +20,7 @@ public class ConstructionMaterial {
 
     public void setId(int id) {
     	// your code goes here
+        this.id=id;
     }
 
     public String getName() {
@@ -27,6 +30,7 @@ public class ConstructionMaterial {
 
     public void setName(String name) {
     	// your code goes here
+        this.name=name;
     }
 
     public double getPricePerUnit() {

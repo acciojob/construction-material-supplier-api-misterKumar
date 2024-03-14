@@ -16,15 +16,23 @@ public class ConstructionMaterialSupplierService {
 
     public ConstructionMaterialSupplierService() {
     	// your code goes here
+        materialDatabase=new HashMap<>();
+        supplierDatabase=new HashMap<>();
+        nextMaterialId=1;
+        nextSupplierId=1;
     }
 
     public ConstructionMaterial addConstructionMaterial(ConstructionMaterial material) {
     	// your code goes here
+        material.setId(nextMaterialId++);
+        materialDatabase.put(material.getId(), material);
         return material;
     }
 
     public Supplier addSupplier(Supplier supplier) {
     	// your code goes here
+        supplier.setId(nextSupplierId++);
+        supplierDatabase.put(supplier.getId(), supplier);
         return supplier;
     }
 

@@ -17,6 +17,7 @@ public class ConstructionMaterialSupplierController {
 	    @Autowired
 	    public ConstructionMaterialSupplierController(ConstructionMaterialSupplierService service) {
 	    	// your code goes here
+			this.service=service;
 	    }
 
 	    @PostMapping("/addmaterial")
